@@ -1,0 +1,43 @@
+# Neuron C / NodeBuilder Build Artifacts
+Development/
+Release/
+IM/
+*.NbOpt
+*.NbPrj
+*.NbWsp
+*.NbDt
+
+# Compiled and Output Files
+*.APB
+*.log
+*.map
+*.NDB
+*.NDL
+*.NEI
+*.NME
+*.NMF
+*.NXE
+*.XFB
+*.XIF
+*.bak
+
+# Intermediate and Temp Files
+*.dbg
+*.dbt
+*.dep
+*.nadep
+*.ncdep
+*.nkdep
+*.nldep
+*.nxdep
+*.nxr
+*.phd
+*.PLF
+*.ti
+*.no
+*.ns
+*.bf2
+*.bif
+
+# Archives
+

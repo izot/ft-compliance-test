@@ -1,0 +1,25 @@
+{
+  "name": "neuronc",
+  "displayName": "neuronc",
+  "description": "Neuron C Syntax highlighter",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.110.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "neuronc",
+      "aliases": ["Neuron C", "neuronc"],
+      "extensions": [".nc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "neuronc",
+      "scopeName": "source.nc",
+      "path": "./syntaxes/neuronc.tmLanguage.json"
+    }]
+  }
+}

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<HardwareTemplate UseExtendedRAM="FALSE">
+  <Contents MajorVersion="0" MinorVersion="2" CreationDate="1016140805" Format="1" Content="3">
+    <FileDescription>NodeBuilder Hardware Template File</FileDescription>
+  </Contents>
+  <HardwarePlatform>Custom</HardwarePlatform>
+  <NeuronModelKey>1</NeuronModelKey>
+  <SystemImageName>SYS3150</SystemImageName>
+  <FirmwareVersion>Ver13</FirmwareVersion>
+  <Description>Hardware template compatible with Echelon model 55020-10,  TP/FT-10F control module  with 29C257 (32Kx8) flash memory.</Description>
+  <TransceiverStdID>7</TransceiverStdID>
+  <ClockID>5</ClockID>
+  <ClockMultiplier>0.5</ClockMultiplier>
+  <ROMstart>0x0000</ROMstart>
+  <ROMend>0x0000</ROMend>
+  <RAMstart>0x0000</RAMstart>
+  <RAMend>0x0000</RAMend>
+  <NVstart>0x0000</NVstart>
+  <NVend>0x7FFF</NVend>
+  <IOstart>0x0000</IOstart>
+  <IOend>0x0000</IOend>
+  <FlashSectorSize>64</FlashSectorSize>
+  <NonVolMemType>FLASH</NonVolMemType>
+  <EEWriteTime>N/A</EEWriteTime>
+  <Oscillator>OSC1</Oscillator>
+</HardwareTemplate>
