@@ -1,8 +1,8 @@
-# CommTest2
-This project implements a LonWorks communication performance test application using SNVT_count_32 variables to establish the performance baseline of the original Echelon FT-10 solution.
+# ft-compliance-test
+This github repo implements a LonWorks communication performance test application using SNVT_count_32 variables to establish the performance baseline of the original Echelon FT-10 solution. The local EnOcean Nodebuilder project files are references as CommTest2.
 
 ## Purpose
-- Evaluate Lon communication performance.
+- Evaluate Lon FT channel communication performance.
 - Use `SNVT_count_32` based variables for transmit and receive counters.
 - Track transmit failures and verify correct receive sequencing.
 - Support long running test cases in excess of 100,000 packets
