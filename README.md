@@ -81,7 +81,7 @@ The `UFPTcommTester` profile has the following members:
 ## Baseline Testing
 
 ![61 Device Test Network](images/TestNetwork.png)
-The system for the baseline test was configured using IzoT CT.  The operation of the test is done using nodeutil and the scripts found in the directory <b>Scripts</b> With the <b>Scripts</b> as the current working directory run.  The .snu scripts must be modified to match the test network NIDs.  Devices.txt is prepared to name the devices as defined in the CT project:
+The system for the baseline test was configured using IzoT CT.  The operation of the test is done using nodeutil and the scripts found in the directory <b>Scripts</b> With the <b>Scripts</b> as the current working directory run.  The .snu scripts must be modified to match the test network NIDs.  Devices.txt is prepared to name the devices as defined in the CT project.  The CLI application StatusParser.exe converts the raw nodeutil output of the various snu scripts to a CSV file for presentation:
 
 ## Quiet Wire Test
 
@@ -94,7 +94,7 @@ This test verifies the physical layer performance.  In this test, noteutil uses 
 
 ## Peer-to-Peer Performance
 
-In this test there are (16) sending devices that use acknowledged service with (3) retries to update each bound nvoTarget_[n] in a round robin fashion. Updates are offered only every 0.2 seconds by each of the senders.  At the start of the test the senders are reset, and there will be a random start where each sender boardcasts the clear status network diagnostic command to all devices on the channel. After each a total of `cpTestLimit` nv updatas are send, the sender stops generating traffic.  With all sender configured with the same `cpUpdateRate` (0.2s) and same `cpTestLimit` (100,000) the network traffic will drop from 70% BW utilization to 0.  It is assumed that the original setup has initialized all the senders with `cpStartDelay` and `cpTestLimit`.  The script peertest.snu will handle setting the cpUpdateRate for the 16 sender devices.   
+In this test there are (16) sending devices that use acknowledged service with (3) retries to update each bound nvoTarget_[n] in a round robin fashion. Updates are offered only every 0.2 seconds by each of the senders.  At the start of the test the senders are reset, and there will be a random start where each sender boardcasts the clear status network diagnostic command to all devices on the channel. After each a total of `cpTestLimit` nv updatas are sent, the sender stops generating traffic.  With all senders configured with the same `cpUpdateRate` (0.2s) and same `cpTestLimit` (100,000) the network traffic will drop from 70% BW utilization to 0.  It is assumed that the original setup has initialized all the senders with `cpStartDelay` and `cpTestLimit`.  The script peertest.snu will handle setting the cpUpdateRate for the 16 sender devices.   
 
 1. `nodeuitl -b -h -dx.default.rni -ipeertest.snu`
 2. Allow 6 hours for the test to complete.  BW utilization will be close to 70% and in aggregate, 1.6 million acknowleged updates will occur.
