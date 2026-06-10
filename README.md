@@ -70,12 +70,13 @@ The `UFPTcommTester` profile has the following members:
 - `CommTest2/commTester.nc` - main application logic for commTester functionality
 - `CommTest2/commTester.h` - component declarations and interface definitions
 - `CommTest2/common.h` - shared project definitions
+- `Apollo_dev.zip` - LonMark resource file set for the commTester app
 
 ## Notes
 
 - Senders are are devices that have bound connections to one or more nvoTarget_[n] outputs connected to a like devices nviCount input.  And the cpUpdateRate that is note zero.  2 should be considered the minimum (.2s)
 - Receivers consider a missing or skipped count as a test failure and increment `failTotal`.
-- The LonMark resource file set: apollo_dev.zip should be added to the test PC's types catalog if you are using IzoT Net Server.
+- The LonMark resource file set is include in Apollo_dev.zip.  Add this resource file set to the test PC's types catalog if you are using IzoT Net Server, IzoT CT, or another tool that requires a resource file set for a custom LonMark profile.
 - The IzoT CT Backup `ComplianceTest.zip` is the 61 device network including (16) FT-6050 Evb and (45) FT 3150 based devices used for baseline testing.  The connections use Ack'd service with 3 retries and default IzoT CT channel timing parameter.  Be sure to setup the Apollo_dev.typ file set before restoring the database.
 
 ## Baseline Testing
